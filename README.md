@@ -17,9 +17,10 @@ La máquina productora repone etiquetas en cantidades determinadas (por defecto,
 
 Se deberán crear las siguientes clases:  
 - **`Maquina`** 🏷️: Representa una máquina etiquetadora (**consumidor**).  
-- **`Productor`** 🎟️: Representa la máquina que genera las etiquetas.  
+- **`Productor`** 🎟️: Representa la máquina que genera las etiquetas.
+- **`Deposito`** 📦: Representa el depósito de etiquetas.
 
-Ambas clases trabajarán con **hilos** 🧵 y utilizarán **monitores** (`synchronized`) 🔒 para garantizar la sincronización.  
+Las clases `Maquina` y `Productor` trabajarán con **hilos** 🧵 y utilizarán **monitores** (`synchronized`) 🔒 para garantizar la sincronización.  
 
 Al sacar una etiqueta, se deberá **visualizar cuántas etiquetas ha consumido** cada máquina 🔢.  
 
@@ -27,6 +28,6 @@ Al sacar una etiqueta, se deberá **visualizar cuántas etiquetas ha consumido**
 
 Opcionalmente, la aplicación permitirá configurar:  
 1. **Número de máquinas etiquetadoras** 🏷️:  
-   - [ ] Si no se especifica, se considerará el valor por defecto de **5**.  
+   - [x] Si no se especifica, se considerará el valor por defecto de **5**.  
 2. **Cantidad de etiquetas que se añaden al depósito** 📦 cuando el nivel de etiquetas sea menor a **10**:  
-   - [ ] Si no se especifica, se considerará el valor por defecto de **10 etiquetas**.  
+   - [x] Si no se especifica, se considerará el valor por defecto de **10 etiquetas**.  
